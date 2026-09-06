@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="RenderPch.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderDevice.h">
+      <Filter>00.Device</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTypes.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>01.Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetGroup.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderItem.h">
+      <Filter>03.RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>04.RenderResource\01.Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>04.RenderResource\03.Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>04.RenderResource\03.Shader\01.VertexShader</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>04.RenderResource\03.Shader\02.PixelShader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderGroup.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProjMatrix.h">
+      <Filter>06.ViewProj</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.h">
+      <Filter>05.Buffers\ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialParameter.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+    <ClInclude Include="RefCountBlock.h">
+      <Filter>99.Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialSlot.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGlobal.h">
+      <Filter>99.Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>04.RenderResource\04.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureSlot.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferStruct.h">
+      <Filter>06.Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="LightItem.h">
+      <Filter>04.RenderResource\05.Light</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryPass.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="LightingPass.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPassBase.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPass.h">
+      <Filter>02.RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredLightingMaterial.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+    <ClInclude Include="GBufferMaterial.h">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RenderPch.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderDevice.cpp">
+      <Filter>00.Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>01.Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetGroup.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderItem.cpp">
+      <Filter>03.RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>04.RenderResource\01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>04.RenderResource\03.Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>04.RenderResource\03.Shader\01.VertexShader</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>04.RenderResource\03.Shader\02.PixelShader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderGroup.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProjMatrix.cpp">
+      <Filter>06.ViewProj</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBuffer.cpp">
+      <Filter>05.Buffers\ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialParameter.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+    <ClCompile Include="RefCountBlock.cpp">
+      <Filter>99.Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialSlot.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGlobal.cpp">
+      <Filter>99.Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>04.RenderResource\04.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureSlot.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferStruct.cpp">
+      <Filter>06.Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryPass.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="LightingPass.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPassBase.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPass.cpp">
+      <Filter>02.RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredLightingMaterial.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+    <ClCompile Include="GBufferMaterial.cpp">
+      <Filter>04.RenderResource\02.Material</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="999.Default">
+      <UniqueIdentifier>{ec255198-52ec-450e-aa5a-ef1b2ccf2b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Device">
+      <UniqueIdentifier>{3935387c-bf0d-4999-a936-5d8a71b6ccf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Renderer">
+      <UniqueIdentifier>{5af7c13c-3418-4284-ade5-8f06a5b0ef9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.RenderItem">
+      <UniqueIdentifier>{c0a55ce7-cb3a-4ab7-a341-afacc3f1f006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource">
+      <UniqueIdentifier>{38edaa22-c0a1-460c-abd8-cc0a0a982b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\01.Geometry">
+      <UniqueIdentifier>{f987f82b-5e9c-41db-8d92-e836a4585c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\02.Material">
+      <UniqueIdentifier>{ea837cd4-5241-4a65-94ec-0ad96c1cf0fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\03.Shader">
+      <UniqueIdentifier>{e5120c49-71a0-4cad-b343-1e3467719d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\03.Shader\01.VertexShader">
+      <UniqueIdentifier>{7d595ed3-b42a-4982-88d0-c9e01866510e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\03.Shader\02.PixelShader">
+      <UniqueIdentifier>{1a62b308-db9d-46c5-8fcf-2a7dd0bd5298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.RenderPipeline">
+      <UniqueIdentifier>{eec695a5-999d-45a6-83e3-45aa7f454ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.ViewProj">
+      <UniqueIdentifier>{21d6a0ae-7a77-47e8-8f22-18f2d12dc1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Buffers">
+      <UniqueIdentifier>{4af4ee17-bf72-4f90-b965-4617f47ee5cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Buffers\ConstantBuffer">
+      <UniqueIdentifier>{45f9e4a0-5faa-4194-a043-ea48a672fbe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Util">
+      <UniqueIdentifier>{af7e17b6-95f8-4a5b-885d-488fbc1a13aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Global">
+      <UniqueIdentifier>{95cce5ec-aefd-486d-bcd9-9dcfdf34f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\04.Texture">
+      <UniqueIdentifier>{08e6ffab-f41b-4e2f-bdd7-734461821598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.Struct">
+      <UniqueIdentifier>{77574278-af7b-402f-941f-7188128b11ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.RenderResource\05.Light">
+      <UniqueIdentifier>{34f5fed0-a9c6-4a32-af93-31e274df443e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

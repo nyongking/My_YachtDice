@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="999.Default">
+      <UniqueIdentifier>{3cf0210f-581a-41e5-bc56-50c3c06d5e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Object">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-012345678902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\00.Component">
+      <UniqueIdentifier>{b39fa042-c38c-4c16-98ef-760ef712d8bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\RenderComponent">
+      <UniqueIdentifier>{65fd3a55-7f2c-42ce-9251-e70354b70a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\01.Transform">
+      <UniqueIdentifier>{1e50bfea-f9bd-4571-8849-4f4d94cd7b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\RenderComponent\QuadComponent">
+      <UniqueIdentifier>{ef899aec-1b78-4be9-be13-6b2155fb1101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Global">
+      <UniqueIdentifier>{9d87ee2c-8c96-4f54-921c-12731d6196e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager">
+      <UniqueIdentifier>{1b2476ce-012c-4ae5-8ae3-69aab7952162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource">
+      <UniqueIdentifier>{4e2d3b51-6adb-4f8a-bd8e-e4900c32bfe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource\Geometry">
+      <UniqueIdentifier>{bc27f701-1294-494e-8b74-0c924388a79b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource\Shader">
+      <UniqueIdentifier>{2f1fcc15-b6f4-4d2c-b6ad-ce0d69d05909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource\Material">
+      <UniqueIdentifier>{e1a608d3-fc79-4c08-bad3-2689332d4fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\CameraComponent">
+      <UniqueIdentifier>{76aa446a-30db-499b-b8ea-e56c07e61fa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource\Texture">
+      <UniqueIdentifier>{7af6727d-352b-4f64-9bee-552390ae10ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\RenderComponent\ModelComponent">
+      <UniqueIdentifier>{f02ca4a0-3cb3-4a5b-a949-ff18df0df74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Resource\Model">
+      <UniqueIdentifier>{a439ecf5-e0f0-4200-bf48-b79b1c19a1f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\LightComponent">
+      <UniqueIdentifier>{d659c63d-b686-4f80-a01f-0898c63ecd11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Physics">
+      <UniqueIdentifier>{a8b9c0d1-e2f3-4567-89ab-cdef01234567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\RigidBodyComponent">
+      <UniqueIdentifier>{b9c0d1e2-f3a4-5678-9abc-def012345678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Util">
+      <UniqueIdentifier>{f7fe06a1-877e-429a-9f35-f8f486cf4e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\InputManager">
+      <UniqueIdentifier>{9e8f9b7f-2a3f-43f2-b6e5-1e7c46f97251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\UIComponent">
+      <UniqueIdentifier>{a1b2c3d4-1111-2222-3333-444455556666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\AnimatorComponent">
+      <UniqueIdentifier>{c5106fa2-f60c-4dff-b8d6-d26bb7e9e734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Manager\Audio">
+      <UniqueIdentifier>{e7a1b2c3-d4e5-6f78-9012-abcdef345678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Component\AudioComponent">
+      <UniqueIdentifier>{f8b2c3d4-e5f6-7089-0123-bcdef4567890}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameEnginePch.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>00.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>01.Component\00.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderComponent.h">
+      <Filter>01.Component\RenderComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>01.Component\01.Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>01.Component\RenderComponent\QuadComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineGlobal.h">
+      <Filter>99.Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCache.h">
+      <Filter>03.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryManager.h">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>03.Manager\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadComponent.h">
+      <Filter>01.Component\RenderComponent\QuadComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="BillboardComponent.h">
+      <Filter>01.Component\RenderComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>03.Manager\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>01.Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentRegistry.h">
+      <Filter>99.Global</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>03.Manager\Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>01.Component\RenderComponent\ModelComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>03.Manager\Resource\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelComponent.h">
+      <Filter>01.Component\RenderComponent\ModelComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="LightComponent.h">
+      <Filter>01.Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorScene.h">
+      <Filter>02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
+      <Filter>03.Manager\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsConvert.h">
+      <Filter>03.Manager\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBodyComponent.h">
+      <Filter>01.Component\RigidBodyComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="WireframeMaterial.h">
+      <Filter>03.Manager\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGeometry.h">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>01.Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOperation.h">
+      <Filter>04.Util</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>03.Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UIComponent.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIImageComponent.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPanel.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UICanvas.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIComponentRegistry.h">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMaterial.h">
+      <Filter>03.Manager\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="NineSliceGeometry.h">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyframeAnimation.h">
+      <Filter>01.Component\AnimatorComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatorComponent.h">
+      <Filter>01.Component\AnimatorComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="UIAnimation.h">
+      <Filter>01.Component\AnimatorComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioClip.h">
+      <Filter>03.Manager\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>03.Manager\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSourceComponent.h">
+      <Filter>01.Component\AudioComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioListenerComponent.h">
+      <Filter>01.Component\AudioComponent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameEnginePch.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>00.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>01.Component\00.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderComponent.cpp">
+      <Filter>01.Component\RenderComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>01.Component\01.Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>01.Component\RenderComponent\QuadComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineGlobal.cpp">
+      <Filter>99.Global</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryManager.cpp">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>03.Manager\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadComponent.cpp">
+      <Filter>01.Component\RenderComponent\QuadComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="BillboardComponent.cpp">
+      <Filter>01.Component\RenderComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>03.Manager\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>01.Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentRegistry.cpp">
+      <Filter>99.Global</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>03.Manager\Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>01.Component\RenderComponent\ModelComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>03.Manager\Resource\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelComponent.cpp">
+      <Filter>01.Component\RenderComponent\ModelComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="LightComponent.cpp">
+      <Filter>01.Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp">
+      <Filter>03.Manager\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBodyComponent.cpp">
+      <Filter>01.Component\RigidBodyComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGeometry.cpp">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>01.Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>03.Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UIComponent.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UIImageComponent.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPanel.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UICanvas.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UIComponentRegistry.cpp">
+      <Filter>01.Component\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMaterial.cpp">
+      <Filter>03.Manager\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="NineSliceGeometry.cpp">
+      <Filter>03.Manager\Resource\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyframeAnimation.cpp">
+      <Filter>01.Component\AnimatorComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatorComponent.cpp">
+      <Filter>01.Component\AnimatorComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioClip.cpp">
+      <Filter>03.Manager\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>03.Manager\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSourceComponent.cpp">
+      <Filter>01.Component\AudioComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioListenerComponent.cpp">
+      <Filter>01.Component\AudioComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

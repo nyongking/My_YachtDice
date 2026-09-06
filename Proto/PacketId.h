@@ -1,0 +1,34 @@
+#pragma once
+
+enum class PacketId : uint16
+{
+	// Client -> Server (1000~)
+	C_JOIN			= 1001,
+	C_THROW_DICE	= 1002,
+	C_SELECT_SCORE	= 1003,
+	C_LEAVE			     = 1004,
+	C_INJECT_ORIENTATION = 1005,
+	C_CLEAR_INJECT	     = 1006,
+	C_CUP_SHAKE          = 1007,
+	C_CUP_FLIP           = 1008,
+	C_DICE_SELECT        = 1009,
+	C_DICE_RETURN        = 1010,
+	C_DICE_TO_CUP        = 1011,
+
+	// Server -> Client (2000~)
+	S_JOIN_RESULT	= 2001,
+	S_GAME_STATE	= 2002,
+	S_TURN_CHANGE	= 2003,
+	S_GAME_OVER		= 2004,
+	S_PLAYER_JOINED	= 2005,
+	S_PLAYER_LEFT	= 2006,
+	S_ROLL_START	= 2007,
+	S_DICE_SNAPSHOT	= 2008,
+	S_ROLL_SETTLED	= 2009,
+	S_CUP_SHAKE     = 2010,
+	S_CUP_FLIP      = 2011,
+	S_DICE_SELECT   = 2012,
+	S_DICE_RETURN   = 2013,
+	S_DICE_TO_CUP      = 2014,
+	S_SCORE_SELECTED   = 2015,
+};

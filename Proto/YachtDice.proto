@@ -1,0 +1,118 @@
+syntax = "proto3";
+package Protocol;
+
+// Client -> Server
+message C_JOIN {
+    string player_name = 1;
+}
+
+message C_THROW_DICE {
+    repeated int32 held_indices = 1;
+}
+
+message C_SELECT_SCORE {
+    int32 category = 1;
+}
+
+message C_LEAVE {
+}
+
+message C_INJECT_ORIENTATION {
+    int32 dice_index  = 1;
+    int32 target_face = 2;
+}
+
+message C_CLEAR_INJECT {
+    int32 dice_index = 1;  // -1 = clear all
+}
+
+message C_CUP_SHAKE {}
+message C_CUP_FLIP {}
+
+message C_DICE_SELECT {
+    int32 dice_index = 1;
+    int32 slot_index = 2;
+}
+message C_DICE_RETURN {
+    int32 dice_index = 1;
+}
+
+message C_DICE_TO_CUP {}
+
+// Server -> Client
+message S_JOIN_RESULT {
+    bool success = 1;
+    int32 player_id = 2;
+    int32 player_count = 3;
+}
+
+message S_GAME_STATE {
+    int32 current_player_id = 1;
+    int32 roll_count = 2;
+    repeated int32 dice_values = 3;
+    repeated PlayerInfo players = 4;
+}
+
+message S_TURN_CHANGE {
+    int32 current_player_id = 1;
+    int32 turn_number = 2;
+}
+
+message S_GAME_OVER {
+    int32 winner_id = 1;
+    repeated PlayerInfo players = 2;
+}
+
+message S_PLAYER_JOINED {
+    int32 player_id = 1;
+    string player_name = 2;
+}
+
+message S_PLAYER_LEFT {
+    int32 player_id = 1;
+}
+
+message PlayerInfo {
+    int32 player_id = 1;
+    string player_name = 2;
+    int32 total_score = 3;
+    repeated int32 score_board = 4;
+}
+
+// Dice transform (position + quaternion rotation)
+message DiceTransform {
+    float px = 1;  float py = 2;  float pz = 3;
+    float qx = 4;  float qy = 5;  float qz = 6;  float qw = 7;
+}
+
+message S_ROLL_START {
+    int32 roll_count = 1;
+}
+
+message S_DICE_SNAPSHOT {
+    repeated DiceTransform dice_transforms = 1;
+}
+
+message S_CUP_SHAKE {}
+message S_CUP_FLIP {}
+
+message S_DICE_SELECT {
+    int32 dice_index = 1;
+    int32 slot_index = 2;
+}
+message S_DICE_RETURN {
+    int32 dice_index = 1;
+}
+
+message S_DICE_TO_CUP {}
+
+message S_SCORE_SELECTED {
+    int32 player_id = 1;
+    int32 category  = 2;
+}
+
+message S_ROLL_SETTLED {
+    repeated int32 dice_values = 1;
+    int32 roll_count = 2;
+    repeated DiceTransform final_transforms = 3;
+}

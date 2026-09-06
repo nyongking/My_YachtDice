@@ -1,0 +1,29 @@
+{
+  "name": "ScoreText",
+  "posX": 0.6,
+  "posY": 0.25,
+  "width": 400.0,
+  "height": 60.0,
+  "depth": 10.0,
+  "visible": true,
+  "components": [
+    {
+      "type": "UITextComponent",
+      "name": "ScoreText",
+      "anchor": "Center",
+      "alignment": "Center",
+      "posX": 0.0,
+      "posY": 0.0,
+      "width": 400.0,
+      "height": 60.0,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "fontScale": 2.5,
+      "text": "Hello World!",
+      "colorR": 1.0,
+      "colorG": 1.0,
+      "colorB": 1.0,
+      "colorA": 1.0
+    }
+  ]
+}

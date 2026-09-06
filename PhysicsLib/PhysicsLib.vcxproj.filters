@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Vec3.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsPch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Quat.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation.h">
+      <Filter>Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="MyNumbers.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Mat3.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBody.h">
+      <Filter>Rigidbody</Filter>
+    </ClInclude>
+    <ClInclude Include="BroadPhase.h">
+      <Filter>Step</Filter>
+    </ClInclude>
+    <ClInclude Include="NarrowPhase.h">
+      <Filter>Step</Filter>
+    </ClInclude>
+    <ClInclude Include="IJobDispatcher.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Contact.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactSolver.h">
+      <Filter>Step</Filter>
+    </ClInclude>
+    <ClInclude Include="IslandBuilder.h">
+      <Filter>Step</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsWorld.h">
+      <Filter>Step</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCast.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PhysicsPch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBody.cpp">
+      <Filter>Rigidbody</Filter>
+    </ClCompile>
+    <ClCompile Include="BroadPhase.cpp">
+      <Filter>Step</Filter>
+    </ClCompile>
+    <ClCompile Include="NarrowPhase.cpp">
+      <Filter>Step</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactSolver.cpp">
+      <Filter>Step</Filter>
+    </ClCompile>
+    <ClCompile Include="IslandBuilder.cpp">
+      <Filter>Step</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsWorld.cpp">
+      <Filter>Step</Filter>
+    </ClCompile>
+    <ClCompile Include="RayCast.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Type">
+      <UniqueIdentifier>{f8fbc484-80c7-496a-9091-81c51f0fbf2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{2fe7c89a-c507-4074-8089-a88b96219090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operation">
+      <UniqueIdentifier>{86f62d5d-c38b-4100-81fa-c5110bd7ba62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collider">
+      <UniqueIdentifier>{43483a7a-3702-4c4a-985a-b44334e32e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rigidbody">
+      <UniqueIdentifier>{fb5d5b7e-7391-48ad-b136-538e9478762c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Step">
+      <UniqueIdentifier>{4bf399b7-ef05-4eb1-8372-13182c6c22ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

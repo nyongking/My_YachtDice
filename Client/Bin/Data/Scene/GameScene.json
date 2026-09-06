@@ -1,0 +1,698 @@
+{
+  "gameObjects": [
+    {
+      "name": "MainCamera",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 0.0, 0.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 1.0, 1.0, 1.0 ]
+      },
+      "components": [
+        {
+          "type": "CameraComponent",
+          "isMainCamera": true,
+          "isPerspective": true,
+          "fovYDeg": 45.0,
+          "aspect": 1.7777778,
+          "nearZ": 0.1,
+          "farZ": 1000.0,
+          "eye": [ 0.0, 18.0, 8.45 ],
+          "target": [ 0.0, 0.0, 8.5 ]
+        },        
+        {
+          "type":  "AudioListenerComponent"
+        }
+      ]
+    },
+    {
+      "name": "DirectionalLight",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 0.0, 0.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 1.0, 1.0, 1.0 ]
+      },
+      "components": [
+        {
+          "type": "LightComponent",
+          "lightType": "Directional",
+          "color": [ 1.0, 1.0, 1.0 ],
+          "direction": [ 0.1, -1.0, -0.5 ],
+          "position": [ 0.0, 0.0, 0.0 ],
+          "intensity": 1.0,
+          "range": 0.0,
+          "spotInner": 0.0,
+          "spotOuter": 0.0
+        }
+      ]
+    },
+    {
+      "name": "FallingCube",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 30.0, 5.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 45.0, 45.0, 45.0 ]
+      },
+      "components": [
+        {
+          "type": "Dice"
+        },
+        {
+          "type": "ModelComponent",
+          "modelKey": "Cube2",
+          "modelPath": "Bin/Resource/Model/Cube.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            { "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ] },
+            { "albedoColor": [ 0.667, 0.078, 0.0, 1.0 ] }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 5.0,
+          "restitution": 0.7,
+          "friction": 0.4,
+          "linearDamping": 0.06,
+          "angularDamping": 0.08,
+          "collider": {
+            "shape": "Box",
+            "halfExtents": [ 0.43, 0.43, 0.43 ],
+            "isTrigger": false,
+            "layer": 1,
+            "layerMask": [ 1, 2, 3 ],
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "FallingCube2",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 30.0, 5.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 45.0, 45.0, 45.0 ]
+      },
+      "components": [
+        {
+          "type": "Dice"
+        },
+        {
+          "type": "ModelComponent",
+          "modelKey": "Cube2",
+          "modelPath": "Bin/Resource/Model/Cube.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            { "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ] },
+            { "albedoColor": [ 0.667, 0.078, 0.0, 1.0 ] }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 5.0,
+          "restitution": 0.7,
+          "friction": 0.4,
+          "linearDamping": 0.06,
+          "angularDamping": 0.08,
+          "collider": {
+            "shape": "Box",
+            "halfExtents": [ 0.43, 0.43, 0.43 ],
+            "isTrigger": false,
+            "layer": 1,
+            "layerMask": [ 1, 2, 3 ],
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "FallingCube3",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 30.0, 5.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 45.0, 45.0, 45.0 ]
+      },
+      "components": [
+        {
+          "type": "Dice"
+        },
+        {
+          "type": "ModelComponent",
+          "modelKey": "Cube2",
+          "modelPath": "Bin/Resource/Model/Cube.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            { "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ] },
+            { "albedoColor": [ 0.667, 0.078, 0.0, 1.0 ] }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 5.0,
+          "restitution": 0.7,
+          "friction": 0.4,
+          "linearDamping": 0.06,
+          "angularDamping": 0.08,
+          "collider": {
+            "shape": "Box",
+            "halfExtents": [ 0.43, 0.43, 0.43 ],
+            "isTrigger": false,
+            "layer": 1,
+            "layerMask": [ 1, 2, 3 ],
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "FallingCube4",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 30.0, 5.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 45.0, 45.0, 45.0 ]
+      },
+      "components": [
+        {
+          "type": "Dice"
+        },
+        {
+          "type": "ModelComponent",
+          "modelKey": "Cube2",
+          "modelPath": "Bin/Resource/Model/Cube.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            { "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ] },
+            { "albedoColor": [ 0.667, 0.078, 0.0, 1.0 ] }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 5.0,
+          "restitution": 0.7,
+          "friction": 0.4,
+          "linearDamping": 0.06,
+          "angularDamping": 0.08,
+          "collider": {
+            "shape": "Box",
+            "halfExtents": [ 0.43, 0.43, 0.43 ],
+            "isTrigger": false,
+            "layer": 1,
+            "layerMask": [ 1, 2, 3 ],
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "FallingCube5",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, 30.0, 5.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 45.0, 45.0, 45.0 ]
+      },
+      "components": [
+        {
+          "type": "Dice"
+        },
+        {
+          "type": "ModelComponent",
+          "modelKey": "Cube2",
+          "modelPath": "Bin/Resource/Model/Cube.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            { "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ] },
+            { "albedoColor": [ 0.667, 0.078, 0.0, 1.0 ] }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 5.0,
+          "restitution": 0.7,
+          "friction": 0.4,
+          "linearDamping": 0.06,
+          "angularDamping": 0.08,
+          "collider": {
+            "shape": "Box",
+            "halfExtents": [ 0.43, 0.43, 0.43 ],
+            "isTrigger": false,
+            "layer": 1,
+            "layerMask": [ 1, 2, 3 ],
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Desk",
+      "active": true,
+      "transform": {
+        "position": [ 0.0, -30.0, 20.0 ],
+        "rotation": [ 90.0, 90.0, 0.0 ],
+        "scale": [ 20.0, 20.0, 20.0 ]
+      },
+      "components": [
+        {
+          "type": "ModelComponent",
+          "modelKey": "Desk",
+          "modelPath": "Bin/Resource/Model/Desk.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            {
+              "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ],
+              "albedoTexture": "Bin/Resource/Texture/full-frame-shot-brown-wooden-background (2).png",
+              "normalTexture": "Bin/Resource/Texture/Desk02_Normal.png",
+              "shininess": 64.0,
+              "specularStrength": 0.2,
+              "uvTiling": [ 1.0, 2.0 ],
+              "uvOffset": [ 0.18, 0.0 ]
+            }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Static",
+          "mass": 100.0,
+          "restitution": 0.1,
+          "friction": 1.0,
+          "linearDamping": 0.01,
+          "angularDamping": 0.05,
+          "collider": {
+            "shape": "Box",
+            "posOffset": [ 10.8, 0.0, -23.0 ],
+            "halfExtents": [ 20.0, 30.0, 3.0 ],
+            "isTrigger": false,
+            "layer": 2,
+            "layerMask": [ 1 ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "DiceCup",
+      "active": true,
+      "transform": {
+        "position": [ 10.0, -1.0, 5.0 ],
+        "rotation": [ 90.0, 0.0, 0.0 ],
+        "scale": [ 2.0, 2.0, 2.0 ]
+      },
+      "components": [
+        {
+          "type": "ModelComponent",
+          "modelKey": "DiceCup",
+          "modelPath": "Bin/Resource/Model/Roller.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            {
+              "albedoColor": [ 0.078, 0.078, 0.078, 1.0 ],
+              "normalTexture": "Bin/Resource/Texture/TexturesCom_Leather_Plain10_008x008_512_normal.png",
+              "uvTiling": [ 16.0, 8.0 ],
+              "shininess": 27.0,
+              "specularStrength": 0.25
+            },
+            {
+              "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ],
+              "albedoTexture": "Bin/Resource/Texture/TexturesCom_Fabric_Knitted_512_albedo.png",
+              "normalTexture": "Bin/Resource/Texture/TexturesCom_Fabric_Knitted_512_normal.png",
+              "uvTiling": [ 3.0, 3.0 ],
+              "shininess": 45.0,
+              "specularStrength": 0.25
+            }
+          ]
+        },
+        {
+          "type": "AnimatorComponent",
+          "animations": [
+            {
+              "name": "IDLE",
+              "keyframes": [
+                {
+                  "pos": [ 10.0, -1.0, 5.0 ],
+                  "rot": [ 90.0, 0.0, 0.0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 1
+                }
+              ]
+            },
+            {
+              "name": "SHAKE",
+              "loop": "pingpong",
+              "keyframes": [
+                {
+                  "pos": [ 5.4, 6.5, 6.5 ],
+                  "rot": [ 90.0, 0, 0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                },
+                {
+                  "pos": [ 5.0, 6.5, 8 ],
+                  "rot": [ 90.0, 0, 0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                },
+                {
+                  "pos": [ 5.4, 6.5, 9.5 ],
+                  "rot": [ 90.0, 0, 0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.15
+                }
+              ]
+            },
+            {
+              "name": "FLIP",
+              "keyframes": [
+                {
+                  "pos": [ 4.0, 3.5, 8.5 ],
+                  "rot": [ 90.0, 0, 0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                },
+                {
+                  "pos": [ 4.0, 3.5, 8.5 ],
+                  "rot": [ 90.0, 0, 125.0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.25
+                }
+              ]
+            },
+            {
+              "name": "RETURN",
+              "keyframes": [
+                {
+                  "pos": [ 4.0, 3.5, 8.5 ],
+                  "rot": [ 90.0, 0, 125.0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                },
+                {
+                  "pos": [ 10.0, 5.0, 8.0 ],
+                  "rot": [ 90.0, 0, 125.0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                },
+                {
+                  "pos": [ 10.0, -1.0, 5.0 ],
+                  "rot": [ 90.0, 0.0, 0.0 ],
+                  "scale": [ 2.0, 2.0, 2.0 ],
+                  "duration": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Kinematic",
+          "mass": 20.0,
+          "restitution": 0.3,
+          "friction": 0.8,
+          "linearDamping": 0.01,
+          "angularDamping": 0.05,
+          "colliders": [
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ 0.0, 2.2, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ -1.48, 1.48, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 45.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ -2.2, 0.0, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 90.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ -1.48, -1.48, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 135.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ 0.0, -2.2, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ 1.48, -1.48, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 45.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ 2.2, 0.0, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 90.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 1.5, 0.4, 1.9 ],
+              "posOffset": [ 1.48, 1.48, -0.1 ],
+              "rotOffset": [ 0.0, 0.0, 135.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 2.0, 2.0, 0.5 ],
+              "posOffset": [ 0.0, 0.0, 2.0 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 2.0, 2.0, 0.5 ],
+              "posOffset": [ 0.0, 0.0, -2.5 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 2,
+              "layerMask": [ 1 ]
+            }
+          ]
+        },
+        {
+          "type": "DiceCup"
+        }
+      ]
+    },
+    {
+      "name": "Cutter",
+      "active": true,
+      "transform": {
+        "position": [ 1.5, 0.0, 8.5 ],
+        "rotation": [ 90.0, 0.0, 0.0 ],
+        "scale": [ 2.5, 2.5, 2.5 ]
+      },
+      "components": [
+        {
+          "type": "ModelComponent",
+          "modelKey": "cutter",
+          "modelPath": "Bin/Resource/Model/cutter.mymesh",
+          "layer": "Opaque",
+          "sections": [
+            {
+              "albedoColor": [ 0.0, 0.0, 0.0, 1.0 ],
+              "shininess": 61.0,
+              "specularStrength": 0.85
+            },
+            {
+              "albedoColor": [ 1.0, 1.0, 1.0, 1.0 ],
+              "albedoTexture": "Bin/Resource/Texture/TexturesCom_Fabric_Knitted_512_albedo.png",
+              "normalTexture": "Bin/Resource/Texture/TexturesCom_Fabric_Knitted_512_normal.png",
+              "uvTiling": [ 15.0, 15.0 ],
+              "shininess": 64.0,
+              "specularStrength": 0.1
+            }
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "bodyType": "Static",
+          "mass": 10.0,
+          "restitution": 0.3,
+          "friction": 1.5,
+          "linearDamping": 0.01,
+          "angularDamping": 0.05,
+          "colliders": [
+            {
+              "shape": "Box",
+              "halfExtents": [ 6.22, 1.0, 3.0 ],
+              "posOffset": [ 0.0, 5.2, 0.0 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 6.22, 1.0, 3.0 ],
+              "posOffset": [ -5.2, 0.0, 0.0 ],
+              "rotOffset": [ 0.0, 0.0, 90.0 ],
+              "isTrigger": false,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 6.22, 1.0, 3.0 ],
+              "posOffset": [ 0.0, -5.2, 0.0 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 6.22, 1.0, 3.0 ],
+              "posOffset": [ 5.2, 0.0, 0.0 ],
+              "rotOffset": [ 0.0, 0.0, 90.0 ],
+              "isTrigger": false,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 6.22, 6.22, 1.0 ],
+              "posOffset": [ 0.0, 0.0, 3.0 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": false,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            },
+            {
+              "shape": "Box",
+              "halfExtents": [ 4.0, 4.0, 1.0 ],
+              "posOffset": [ 0.0, 0.0, 1.5 ],
+              "rotOffset": [ 0.0, 0.0, 0.0 ],
+              "isTrigger": true,
+              "layer": 3,
+              "layerMask": [ 1 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HoverTL",
+      "active": false,
+      "transform": {
+        "position": [ 0, 7.0, 8.0 ],
+        "rotation": [ 0, 0, 0 ],
+        "scale": [ 0.5, 0.5, 0.5 ]
+      },
+      "components": [
+        {
+          "type": "BillboardComponent",
+          "offset": [ -0.4, 0.0, 0.4 ],
+          "layer": "UI",
+          "texture": "./Bin/Resource/Texture/Res_Yacht_atlas0.png",
+          "atlas": {
+            "x": 1394,
+            "y": 936,
+            "w": 51,
+            "h": 51
+          },
+          "tintR": 0.937,
+          "tintG": 0.4,
+          "tintB": 0.07,
+          "tintA": 1.0
+        },
+        {
+          "type": "BillboardComponent",
+          "offset": [ 0.4, 0.0, 0.4 ],
+          "rotation": -90,
+          "layer": "UI",
+          "texture": "./Bin/Resource/Texture/Res_Yacht_atlas0.png",
+          "atlas": {
+            "x": 1394,
+            "y": 936,
+            "w": 51,
+            "h": 51
+          },
+          "tintR": 0.937,
+          "tintG": 0.4,
+          "tintB": 0.07,
+          "tintA": 1.0
+        },
+        {
+          "type": "BillboardComponent",
+          "offset": [ -0.4, 0.0, -0.4 ],
+          "rotation": 90,
+          "layer": "UI",
+          "texture": "./Bin/Resource/Texture/Res_Yacht_atlas0.png",
+          "atlas": {
+            "x": 1394,
+            "y": 936,
+            "w": 51,
+            "h": 51
+          },
+          "tintR": 0.937,
+          "tintG": 0.4,
+          "tintB": 0.07,
+          "tintA": 1.0
+        },
+        {
+          "type": "BillboardComponent",
+          "offset": [ 0.4, 0.0, -0.4 ],
+          "rotation": 180,
+          "layer": "UI",
+          "texture": "./Bin/Resource/Texture/Res_Yacht_atlas0.png",
+          "atlas": {
+            "x": 1394,
+            "y": 936,
+            "w": 51,
+            "h": 51
+          },
+          "tintR": 0.937,
+          "tintG": 0.4,
+          "tintB": 0.07,
+          "tintA": 1.0
+        }
+      ]
+    }
+  ],
+  "canvases": [
+    "Bin/Data/UI/Layout.json",
+    "Bin/Data/UI/ScoreText.json"
+  ]
+}

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="999.Default">
+      <UniqueIdentifier>{9c97a508-f2df-4992-9fe0-edc985421874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.MainApp">
+      <UniqueIdentifier>{9286a73f-4604-4533-9a7c-edd31edc76e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Enum">
+      <UniqueIdentifier>{83888ab1-40e3-49e5-b794-84323acc5bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Component">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Scene">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.UI">
+      <UniqueIdentifier>{3a25b27a-8dba-41d2-9cb4-0964d2e204a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="999.Imgui">
+      <UniqueIdentifier>{53e50e15-ef29-4872-baa3-30cf7503b584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Session">
+      <UniqueIdentifier>{d054e595-3852-4dc3-af97-fd066a001efd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPch.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApp.h">
+      <Filter>00.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientGlobal.h">
+      <Filter>999.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceCup.h">
+      <Filter>02.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice.h">
+      <Filter>02.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>03.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreType.h">
+      <Filter>97.Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreboardUI.h">
+      <Filter>04.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorWindow.h">
+      <Filter>999.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSession.h">
+      <Filter>01.Session</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkEvents.h">
+      <Filter>01.Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Proto\YachtDice.pb.h">
+      <Filter>01.Session</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Client.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPch.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApp.cpp">
+      <Filter>00.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientGlobal.cpp">
+      <Filter>999.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice.cpp">
+      <Filter>02.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceCup.cpp">
+      <Filter>02.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>03.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreboardUI.cpp">
+      <Filter>04.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imguizmo\ImGuizmo.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui_draw.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui_impl_dx11.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui_impl_win32.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui_tables.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Imgui\imgui_widgets.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorWindow.cpp">
+      <Filter>999.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSession.cpp">
+      <Filter>01.Session</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)Proto\YachtDice.pb.cc">
+      <Filter>01.Session</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
